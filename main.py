@@ -41,3 +41,15 @@ num3 = int(input("What's the next number?: "))
 calculation_function = operations[operation_symbol]
 second_answer = calculation_function(first_answer, num3)
 print(f"{first_answer} {operation_symbol} {num3} = {second_answer}")
+
+clear_choice = input("Type 'y' to continue calculating with 16, or type 'n' to exit.: ")
+
+if clear_choice == "y":
+  num1 = int(input("What's the next number?: "))
+  for symbol in operations:
+    print(symbol)
+  num2= int(input("What's the second number?: "))
+  calculation_function = operations[operation_symbol]
+  first_answer = calculation_function(num1, num2)
+else:
+  return
